@@ -6,28 +6,7 @@ import MovieActions from '../actions/MovieActions';
 import connectToStores from 'alt/utils/connectToStores';
 
 class App extends React.Component {
-  /*
-   * A higher-order function (connectToStores) wraps the React component for store
-   * listening. Two static methods save us from writing a lot of boilerplate:
-   *
-   * constructor() {
-   *   super();
-   *   this.state = MovieStore.getState();
-   * }
-   * 
-   * componentDidMount() {
-   *   MovieStore.listen(this.onChange);
-   * },
-   * 
-   * componentWillUnmount() {
-   *   MovieStore.unlisten(this.onChange);
-   * },
-   * 
-   * onChange(state) {
-   *   this.setState(state);
-   * }
-   * 
-   */
+  
   static getStores() {
     return [MovieStore];
   }
